@@ -1,0 +1,84 @@
+/* Product Style */
+.products {
+    padding: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.product-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    flex-basis: calc(25% - 20px);
+    /* Allows flexibility in width with 4 items per line*/
+    flex-grow: 1;
+    /* allows items to grow if needed */
+    min-width: 250px;
+    /* Prevents squishing too much */
+    max-width: 300px;
+    /* Optional max width to prevent over-expanding */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensures the button is at the bottom */
+    min-height: 450px; /* forces min height keeping items aligned */
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.product-info {
+    flex-grow: 1;
+    /* Ensures that product information takes available space but doesn't push the button down */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: 200px;
+    /* Enforce consistent height */
+    object-fit: contain;
+    /* Ensures the image is scaled to fit completely within the container, without being cropped, while preserving its aspect ratio */
+    border-radius: 5px;
+    margin-top: auto;
+}
+
+.product-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 30px;
+    word-wrap: break-word;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+    text-overflow: ellipsis;
+}
+
+.product-item .price {
+    font-size: 1.2rem;
+    color: #ffae00;
+    font-weight: bold;
+}
+
+.product-item .button {
+    background-color: #ffae00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.product-item .button:hover {
+    background-color: #e69500;
+}

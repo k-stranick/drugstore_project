@@ -1,0 +1,121 @@
+/* Header styling */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: linear-gradient(90deg, rgba(255, 174, 0, 1) 0%, rgba(236, 203, 132, 1) 100%);
+    color: #000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.title {
+    background-color: rgba(255, 230, 160, 0.514);
+    border-radius: 75px;
+    width: 40%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 100%;
+    
+}
+
+/* Logo Picture container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+header .logo {
+    border-radius: 35px;
+}
+
+/* nav bar styling */
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ec8700;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+
+    /* Stack header elements vertically */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    /* Adjust title size and layout */
+    .title {
+        width: 100%;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* Stack navbar items vertically */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    /* Adjust logo size */
+    header .logo {
+        width: 50px;
+        height: auto;
+    }
+}
+
+
+/* Global body style */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background-color: #e2c17f;
+    line-height: 1.6;
+    border: 5px rgb(255, 230, 160) solid;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 10%;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer .social-icons {
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #ffae00;
+}
